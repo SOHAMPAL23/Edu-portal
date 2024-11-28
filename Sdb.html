@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Student Dashboard</h1>
+    
+    <!-- Expense Tracker -->
+    <div class="section" id="expense-tracker">
+        <h2>Expense Tracker</h2>
+        <input type="text" id="expense-description" placeholder="Description">
+        <input type="number" id="expense-amount" placeholder="Amount">
+        <button onclick="addExpense()">Add Expense</button>
+        <ul id="expense-list"></ul>
+    </div>
+
+    <!-- File Manager -->
+    <div class="section" id="file-manager">
+        <h2>File Manager</h2>
+        <input type="file" id="file-input" multiple>
+        <button onclick="manageFiles()">Upload Files</button>
+        <ul id="file-list"></ul>
+    </div>
+
+    <!-- Calendar Notifications -->
+    <div class="section" id="calendar-notifications">
+        <h2>Calendar Notifications</h2>
+        <input type="date" id="event-date">
+        <input type="text" id="event-description" placeholder="Event Description">
+        <button onclick="addEvent()">Add Event</button>
+        <ul id="event-list"></ul>
+    </div>
+
+    <!-- To-Do List -->
+    <div class="section" id="todo-list">
+        <h2>To-Do List</h2>
+        <input type="text" id="todo-item" placeholder="New Task">
+        <button onclick="addTodo()">Add Task</button>
+        <ul id="todo-list-items"></ul>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
