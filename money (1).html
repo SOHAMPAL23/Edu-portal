@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Splitter</title>
+    <link rel="stylesheet" href="money.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+</head>
+<body>
+        <div class="navbar">
+            <a href="Sdb.html">
+                <span class="material-icons-sharp">home</span>
+                <h3>Home</h3>
+            </a>
+            <a href="index.html" onclick="expenseTrackerAll()">
+                <span class="material-icons-sharp">rupee</span>
+                <h3>Expense Tracker</h3>
+            </a>
+            <a href="money.html">
+                <span class="material-icons-sharp">money</span>
+                <h3>Money Splitter</h3>
+            </a>
+            <a href="timetable.html" onclick="timeTableAll()">
+                <span class="material-icons-sharp">today</span>
+                <h3>Time Table</h3>
+            </a> 
+            <a href="exam.html" class="active">
+                <span class="material-icons-sharp">grid_view</span>
+                <h3>Examination</h3>
+            </a>
+            <a href="assignment.html">
+                <span class="material-icons-sharp">password</span>
+                <h3>Change Password</h3>
+            </a>
+            <a href="#">
+                <span class="material-icons-sharp">logout</span>
+                <h3>Logout</h3>
+            </a>
+        </div>
+        <div id="profile-btn" style="display: none;">
+            <span class="material-icons-sharp">person</span>
+        </div>
+        <div class="theme-toggler">
+            <span class="material-icons-sharp active">light_mode</span>
+            <span class="material-icons-sharp">dark_mode</span>
+        </div>
+    <div class="container">
+        <h1>Money Splitter</h1>
+        <form id="splitterForm">
+            <div class="input-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+            </div>
+            <div class="input-group">
+                <label for="amount">Amount:</label>
+                <input type="number" id="amount" required>
+            </div>
+            <button type="submit">Add</button>
+        </form>
+        <div class="result">
+            <h2>Participants</h2>
+            <ul id="participants"></ul>
+            <h2>Total Amount: <span id="totalAmount">0</span></h2>
+            <h2>Each Person Pays: <span id="eachPays">0</span></h2>
+        </div>
+    </div>
+    <script src="money.js"></script>
+</body>
+</html>
