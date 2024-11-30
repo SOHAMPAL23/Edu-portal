@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Splitter</title>
+    <link rel="stylesheet" href="money.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Money Splitter</h1>
+        <div class="theme-toggle">
+            <button id="theme-toggle"><i class="fas fa-moon"></i></button>
+        </div>
+        <!--Total Amount-->
+        <div class="input-group">
+            <label for="total-amount">Total Amount</label>
+            <input type="number" id="total-amount" placeholder="Enter total amount">
+        </div>
+        <!--For Number -->
+        <div class="input-group">
+            <label for="people-count">Number of People</label>
+            <input type="number" id="people-count" placeholder="Enter number of people">
+        </div>
+        <!--Description-->
+        <div class="input-group">
+            <label for="description">Description</label>
+            <input type="text" id="description" placeholder="Enter description">
+        </div>
+        <!--Calculation-->
+        <button id="calculate-btn">Calculate</button>
+        <div class="result">
+            <h2>Each person pays:</h2>
+            <p id="amount-per-person">0</p>
+            <h3>Description:</h3>
+            <p id="expense-description"></p>
+        </div>
+    </div>
+    <script src="money.js"></script>
+</body>
+</html>
